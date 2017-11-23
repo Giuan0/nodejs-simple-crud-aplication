@@ -12,8 +12,8 @@ const schema = new mongoose.Schema({
         default: 'client'
     },
 	registrationDate : {type: Date, required : true},
-    lastLogin: Date,
-	addresses:[{type: String}]
+	lastLogin: Date,
+	address: String
 });
 
 module.exports = mongoose.model('User' , schema);
